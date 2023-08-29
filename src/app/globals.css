@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Color Palette */
+  --black-color: #001C30;
+  --blue-color: #176B87;
+  --blue-light-color: #DAFFFB;
+  --green-color: #64CCC5;
+  --white-color: #eeeeee;
+
+
+}
+
+
+
+body {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+li {
+  list-style: none;
+}
