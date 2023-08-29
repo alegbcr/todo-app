@@ -3,7 +3,6 @@ import { useParams } from "next/navigation";
 // Components
 import { TodoForm } from "@/components/TodoForm";
 import { useTodos } from "@/hooks/useTodos";
-import { useState, useEffect } from "react";
 
 export default function EditPage() {
   const params = useParams();
