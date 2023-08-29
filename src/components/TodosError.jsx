@@ -1,4 +1,4 @@
-const TodosError = ({ error }) => {
+const TodosError = () => {
   return (
     <p
       style={{
