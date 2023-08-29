@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { useStorageListener } from "@/hooks/useStorageListener";
 // Next-UI Components
