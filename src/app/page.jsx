@@ -72,7 +72,7 @@ export default function Home() {
           totalTodos={totalTodos}
         >
           {(todo) => {
-            if (todo.completed === false) {
+            if (todo.completed === true) {
               return (
                 <TodoItem
                   key={todo.id}
@@ -97,7 +97,7 @@ export default function Home() {
           totalTodos={totalTodos}
         >
           {(todo) => {
-            if (todo.completed === true) {
+            if (todo.completed === false) {
               return (
                 <TodoItem
                   key={todo.id}
@@ -116,7 +116,7 @@ export default function Home() {
       <div className="col-span-full row-start-12 row-end-last flex items-center justify-center">
         <Button
           variant="solid"
-          className={`  text-whiteColor  place-items-center justify-self-center bg-blueColor w-5/6`}
+          className={`text-whiteColor  place-items-center justify-self-center bg-blueColor w-5/6`}
           onClick={() => router.push("/new")}
         >
           Agregar nueva nota
