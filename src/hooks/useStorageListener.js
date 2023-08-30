@@ -1,21 +1,25 @@
-'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const useStorageListener = (sincronize) => {
   const [storageChange, setStorageChange] = useState(false);
 
-  if (typeof window !== 'undefined') {
-    window.addEventListener('storage', (e) => {
-      if (e.key === 'todos-v1') {
-        setStorageChange(true);
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('storage', handleStorageChange);
+    }
+
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('storage', handleStorageChange);
       }
-    });
-  }
-  window.addEventListener('storage', (change) => {
-    if (change.key === 'TODOS_V1') {
+    };
+  }, []);
+
+  const handleStorageChange = (e) => {
+    if (e.key === 'TODOS_V1') {
       setStorageChange(true);
     }
-  });
+  };
 
   const toggleShow = () => {
     sincronize();
@@ -29,3 +33,28 @@ const useStorageListener = (sincronize) => {
 };
 
 export { useStorageListener };
+
+// 'use client';
+// import { useState } from 'react';
+
+// const useStorageListener = (sincronize) => {
+//   const [storageChange, setStorageChange] = useState(false);
+
+//   window.addEventListener('storage', (change) => {
+//     if (change.key === 'TODOS_V1') {
+//       setStorageChange(true);
+//     }
+//   });
+
+//   const toggleShow = () => {
+//     sincronize();
+//     setStorageChange(false);
+//   };
+
+//   return {
+//     show: storageChange,
+//     toggleShow,
+//   };
+// };
+
+// export { useStorageListener };
