@@ -11,6 +11,8 @@
   "dependencies": {
     "@nextui-org/react": "^2.1.5",
     "autoprefixer": "10.4.15",
+    "eslint": "^8.48.0",
+    "eslint-config-next": "^13.4.20-canary.11",
     "framer-motion": "^10.16.1",
     "next": "^13.4.20-canary.11",
     "postcss": "8.4.27",
@@ -20,8 +22,6 @@
     "tailwindcss": "3.3.3"
   },
   "devDependencies": {
-    "eslint": "^8.48.0",
-    "eslint-config-next": "^13.4.20-canary.11",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.2"

@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useReducer } from 'react';
 
 const useLocalStorage = (itemName, initialValue) => {

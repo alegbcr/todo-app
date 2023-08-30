@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { useStorageListener } from "@/hooks/useStorageListener";
 // Next-UI Components
 import { Card, Button } from "@nextui-org/react";
