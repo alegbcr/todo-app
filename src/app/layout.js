@@ -5,7 +5,9 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
+  generator: 'Next.js',
   title: 'Notes App',
+  keywords: ['notes, app, nextjs'],
   description: 'Great App to save your notes',
   icons: {
     icon: ['/favicon.ico?v=4'],
@@ -13,7 +15,7 @@ export const metadata = {
     shortcut: ['/apple-touch-icon.png'],
   },
   themeColor: '#eeeeee',
-  manifest: '/public/site.webmanifest',
+  manifest: '/',
 };
 
 export default function RootLayout({ children }) {
