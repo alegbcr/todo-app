@@ -1,12 +1,12 @@
 {
     "theme_color": "#eeeeee",
     "background_color": "#eeeeee",
-    "display": "standalone",
+    "display": "fullscreen",
     "scope": "/",
     "start_url": "/",
     "name": "My Notes",
     "short_name": "my notes",
-    "description": "Great app",
+    "description": "Great app to take notes",
     "icons": [
         {
             "src": "/icon-192x192.png",
