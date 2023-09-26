@@ -20,7 +20,7 @@ function TodoItem({ text, completed, onComplete, onDelete, onEdit }) {
         </div>
         <FaPenToSquare
           onClick={onEdit}
-          className={`text-bases text-blueColor`}
+          className={`text-bases text-blueColor mr-2`}
         />
         <FaTrashCan
           onClick={onDelete}
